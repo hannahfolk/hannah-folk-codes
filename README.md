@@ -1,7 +1,7 @@
 # Hannah Folk - Portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/67f1bc4a-2bb6-49e9-9e82-c9a4a2d5b1c1/deploy-status)](https://app.netlify.com/sites/hannahfolkcodes/deploys)
-[![MIT License](https://img.shields.io/badge/license-MIT-green)](https://github.com/hannahfolk/portfolio-react/blob/master/LICENSE.txt)
+[![MIT License](https://img.shields.io/badge/license-MIT-green)](https://github.com/hannahfolk/hannah-folk-codes/blob/master/LICENSE.txt)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555)](https://linkedin.com/in/hannahfolk)
 
 A modern, responsive portfolio website built with React and Vite, featuring a dark/light theme toggle, scroll animations, and an interactive career timeline.
