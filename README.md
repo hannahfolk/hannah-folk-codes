@@ -8,6 +8,8 @@ A modern, responsive portfolio website built with React and Vite, featuring a da
 
 **[View Live Site](https://hannahfolkcodes.com)**
 
+[![Portfolio Screenshot](images/screenshot.png)](https://hannahfolkcodes.com)
+
 ## Features
 
 - **Dark/Light Theme** - Toggle between themes with preference saved to localStorage
