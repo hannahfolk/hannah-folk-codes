@@ -1,70 +1,142 @@
-# React Portfolio
+# Hannah Folk - Portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/67f1bc4a-2bb6-49e9-9e82-c9a4a2d5b1c1/deploy-status)](https://app.netlify.com/sites/hannahfolkcodes/deploys)
-![GitHub repo size](https://img.shields.io/github/repo-size/hannahfolk/portfolio-react)
-![GitHub contributors](https://img.shields.io/github/contributors/hannahfolk/portfolio-react)
-![GitHub stars](https://img.shields.io/github/stars/hannahfolk/portfolio-react?style=social)
-![GitHub forks](https://img.shields.io/github/forks/hannahfolk/portfolio-react?style=social)
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![MIT License](https://img.shields.io/badge/license-MIT-green)](https://github.com/hannahfolk/portfolio-react/blob/master/LICENSE.txt)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555)](https://linkedin.com/in/hannahfolk)
 
-<a href="https://github.com/hannahfolk/portfolio-react"><strong>Explore the docs »</strong></a>
+A modern, responsive portfolio website built with React and Vite, featuring a dark/light theme toggle, scroll animations, and an interactive career timeline.
 
-<a href="https://hannahfolk/github.io/portfolio-react">View Demo</a>
-·
-<a href="https://github.com/hannahfolk/portfolio-react/issues">Report Bug</a>
-·
-<a href="https://github.com/hannahfolk/portfolio-react/issues">Request Feature</a>
+**[View Live Site](https://hannahfolkcodes.com)**
 
-## Table of Contents
+## Features
 
-- [About the Project](#about-the-project)
-- [Built With](#built-with)
-- [Contact](#contact)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+- **Dark/Light Theme** - Toggle between themes with preference saved to localStorage
+- **Responsive Design** - Mobile-first approach using Bootstrap grid system
+- **Scroll Animations** - Smooth animations on scroll using AOS library
+- **Interactive Timeline** - Visual career history with company logos and tech badges
+- **Typewriter Effect** - Dynamic text animation on the home page
+- **Contact Form** - Integrated with Formspree for email submissions
+- **Single Page Application** - Client-side routing with React Router
 
-## About The Project
+## Tech Stack
 
-[![Product Name Screen Shot][product-screenshot]](https://hannahfolkcodes.com)
+**Frontend Framework**
+- React 16
+- React Router DOM
+- Styled Components
 
-### Built With
+**Build Tools**
+- Vite
+- Sass/SCSS
 
-- [React](https://reactjs.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Iconify](https://iconify.design/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [React Scroll](https://www.npmjs.com/package/react-scroll)
-- [React Switch](https://www.npmjs.com/package/react-switch)
-- [React Typical](https://www.npmjs.com/package/react-typical)
-- [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component)
-- [Semantic UI React](https://react.semantic-ui.com/)
-- [Styled Components](https://styled-components.com/)  
+**UI Libraries**
+- Bootstrap / React Bootstrap
+- Semantic UI React
+- Font Awesome
+- Iconify
 
+**Animations**
+- AOS (Animate On Scroll)
+- React Typical
+- React Vertical Timeline Component
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (see `.nvmrc` for version)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/hannahfolk/hannah-folk-codes.git
+   cd hannah-folk-codes
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The production build will be output to the `./build` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable React components
+│   ├── Navbar/         # Navigation bar
+│   ├── Footer/         # Site footer with social links
+│   ├── Timeline/       # Career timeline component
+│   └── PortfolioModal/ # Modal for project details
+├── pages/              # Page components (one per route)
+│   ├── Home/           # Landing page with theme toggle
+│   ├── About/          # Bio and introduction
+│   ├── Skills/         # Technology skills grid
+│   ├── Resume/         # Work experience timeline
+│   ├── Contact/        # Contact form
+│   └── Portfolio/      # Project showcase (coming soon)
+├── scss/               # Global styles and theming
+│   └── themes/         # Dark and light theme definitions
+├── App.jsx             # Main app with router setup
+└── index.jsx           # Application entry point
+```
+
+## Customization
+
+### Themes
+
+Theme colors are defined in `src/scss/themes/`:
+- `theme-dark.scss` - Dark theme (navy/cyan color scheme)
+- `theme-light.scss` - Light theme
+
+The active theme is controlled via the `data-theme` attribute on the body element.
+
+### Content
+
+- **Timeline entries** - Edit `src/components/Timeline/timeline.component.jsx`
+- **Skills** - Edit `src/pages/Skills/skills.page.jsx`
+- **About bio** - Edit `src/pages/About/about.page.jsx`
+- **Contact form** - Uses Formspree; update the endpoint in `src/pages/Contact/contact.page.jsx`
+
+## Deployment
+
+This site is deployed on [Netlify](https://www.netlify.com/). The build settings are:
+- **Build command:** `npm run build`
+- **Publish directory:** `build`
 
 ## Contact
 
-If you want to contact me you can reach me at [hfolk25@gmail.com](hfolk25@gmail.com).
+Hannah Folk - [hfolk25@gmail.com](mailto:hfolk25@gmail.com)
+
+- LinkedIn: [linkedin.com/in/hannahfolk](https://linkedin.com/in/hannahfolk)
+- GitHub: [github.com/hannahfolk](https://github.com/hannahfolk)
 
 ## License
 
-This project uses the [MIT][license-url] license.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
 
 ## Acknowledgements
 
-- [Dorota1997 - React Frontend Dev Portfolio](https://github.com/Dorota1997/react-frontend-dev-portfolio)
-
-[repo-size-shield]: https://img.shields.io/github/repo-size/hannahfolk/portfolio-react
-[contributors-shield]: https://img.shields.io/github/contributors/hannahfolk/portfolio-react
-[contributors-url]: https://github.com/hannahfolk/portfolio-react/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/hannahfolk/portfolio-react
-[forks-url]: https://github.com/hannahfolk/portfolio-react/network/members
-[stars-shield]: https://img.shields.io/github/stars/hannahfolk/portfolio-react?style=social
-[stars-url]: https://github.com/hannahfolk/portfolio-react/stargazers
-[issues-shield]: https://img.shields.io/github/issues/hannahfolk/portfolio-react
-[issues-url]: https://github.com/hannahfolk/portfolio-react/issues
-[license-shield]: https://img.shields.io/badge/license-MIT-green
-[license-url]: https://github.com/hannahfolk/portfolio-react/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/hannahfolk
-[product-screenshot]: images/screenshot.png
+- [Dorota1997 - React Frontend Dev Portfolio](https://github.com/Dorota1997/react-frontend-dev-portfolio) - Original inspiration
