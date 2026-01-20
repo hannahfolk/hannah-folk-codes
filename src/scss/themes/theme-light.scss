@@ -1,0 +1,92 @@
+@use "../light-slider" as *;
+
+body[data-theme="light"] {
+  @include light-slider;
+
+  .modal-tab {
+    background-color: #6366f1;
+  }
+
+  .title-styles {
+    color: #6366f1;
+  }
+
+  .header-icon {
+    color: #6366f1;
+  }
+
+  header {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  }
+
+  .navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbarLink {
+    color: #334155 !important;
+    &:hover {
+      color: #6366f1 !important;
+    }
+  }
+
+  #about {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    .card {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e2e8f0;
+    }
+    a {
+      color: #6366f1;
+    }
+  }
+
+  #skills {
+    background: linear-gradient(180deg, #1e293b 0%, #334155 100%);
+    .skills-tile {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  #resume {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    .vertical-timeline-element-content {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e2e8f0;
+    }
+    .main-badge {
+      background: #6366f1 !important;
+      color: white;
+    }
+  }
+
+  #contact {
+    background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+  }
+
+  #contact-form-button {
+    color: #6366f1;
+    border-color: #6366f1;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #6366f1;
+      color: white;
+    }
+  }
+
+  #formspree-div a {
+    color: #6366f1;
+  }
+
+  footer {
+    background: #1e293b;
+  }
+}
